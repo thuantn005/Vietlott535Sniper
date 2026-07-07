@@ -1,0 +1,19 @@
+name: Auto Unzip
+on: [push, workflow_dispatch]
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip
+        run: |
+          for z in *.zip; do
+            [ -f "$z" ] && unzip -o "$z" -d . && rm "$z"
+          done
+      - name: Commit
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@github.com"
+          git add .
+          git commit -m "auto unzip" || echo "no changes"
+          git push
