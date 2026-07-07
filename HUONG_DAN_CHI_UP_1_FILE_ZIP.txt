@@ -1,0 +1,10 @@
+NẾU BẠN CHỈ UP ĐƯỢC FILE ZIP TRÊN GITHUB:
+
+1. Tạo repo trống tên Vietlott535Sniper trên github.com
+2. Vào repo > Add file > Upload files > Chỉ upload 1 file duy nhất: Vietlott535Sniper-GitHub.zip (file này)
+3. Bấm Commit changes
+4. Vào tab Actions > Chờ workflow "Auto Unzip" chạy (1 phút) - nó sẽ tự bung zip ra
+5. Sau khi unzip xong, workflow "Build Vietlott 535 Sniper APK" sẽ tự chạy tiếp (3-4 phút)
+6. Vào Actions > Build Vietlott 535 Sniper APK > Kéo xuống Artifacts > Tải Vietlott535Sniper-APK
+
+Bạn chỉ cần up 1 file zip duy nhất, không cần up từng file!

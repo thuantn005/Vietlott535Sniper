@@ -1,0 +1,21 @@
+CACH UP CA THU MUC LEN GITHUB BANG DIEN THOAI:
+
+1. Giai nen zip bang ZArchiver -> duoc folder Vietlott535Sniper
+2. Mo Chrome -> github.com -> dang nhap -> New repository -> Ten: Vietlott535Sniper -> Create
+3. Trong repo moi: Add file > Upload files
+4. Bat che do Desktop site (3 cham > Trang web cho may tinh)
+5. Bam Choose your files -> Chon TAT CA file va folder ben trong Vietlott535Sniper (an giu de chon nhieu) -> Upload -> Commit
+
+HOAC DUNG TERMUX:
+pkg install git unzip -y
+cd /sdcard/Download
+unzip Vietlott535Sniper-GitHub.zip -d Vietlott535Sniper
+cd Vietlott535Sniper
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin https://github.com/USERNAME/Vietlott535Sniper.git
+git push -u origin main
+
+Xong vao Actions > Tai APK o Artifacts
